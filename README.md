@@ -1,9 +1,3 @@
-![GitHub contributors](https://img.shields.io/github/contributors/WeiYe-Jing/datax-web)
-![GitHub issues](https://img.shields.io/github/issues/WeiYe-Jing/datax-web)
-![GitHub](https://img.shields.io/github/license/WeiYe-Jing/datax-web)
-![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/WeiYe-Jing/datax-web)
-![](https://img.shields.io/badge/qq%E7%BE%A4-776939467-green.svg)
-
 # DataX-Web
 
 [![Stargazers over time](https://starchart.cc/WeiYe-Jing/datax-web.svg)](https://starchart.cc/WeiYe-Jing/datax-web)
@@ -169,16 +163,11 @@ DataX Web是在DataX之上开发的分布式数据同步工具，提供简单易
 
 ![](https://datax-web.oss-cn-hangzhou.aliyuncs.com/doc/user.png)
 
-
-# UI
-
-[前端github地址](https://github.com/WeiYe-Jing/datax-web-ui)
-
-# v-2.1.2
+# v-1.0.1
 
 ### 新增
 
-1. 添加对StarRocks数据库的支持
+1. 新增对StarRocks数据库的支持
 2. 对RDBMS数据源增加批量任务创建功能，选择数据源，表即可根据模板批量生成DataX同步任务；
 3. JSON构建增加ClickHouse数据源支持；
 4. 执行器CPU.内存.负载的监控页面图形化；
@@ -187,8 +176,8 @@ DataX Web是在DataX之上开发的分布式数据同步工具，提供简单易
 7. 脚本类型任务增加停止功能；
 8. rdbms json构建增加postSql，并支持构建多个preSql，postSql；
 9. 合并datax-registry模块到datax-rpc中；
-  10.数据源信息加密算法修改及代码优化；
-  11.时间增量同步支持更多时间格式；
-  12.日志页面增加DataX执行结果统计数据；
+    10.数据源信息加密算法修改及代码优化；
+    11.时间增量同步支持更多时间格式；
+    12.日志页面增加DataX执行结果统计数据；
 
 
