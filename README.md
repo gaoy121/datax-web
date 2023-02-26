@@ -168,16 +168,5 @@ DataX Web是在DataX之上开发的分布式数据同步工具，提供简单易
 ### 新增
 
 1. 新增对StarRocks数据库的支持
-2. 对RDBMS数据源增加批量任务创建功能，选择数据源，表即可根据模板批量生成DataX同步任务；
-3. JSON构建增加ClickHouse数据源支持；
-4. 执行器CPU.内存.负载的监控页面图形化；
-5. RDBMS数据源增量抽取增加主键自增方式并优化页面参数配置；
-6. 更换MongoDB数据源连接方式,重构HBase数据源JSON构建模块；
-7. 脚本类型任务增加停止功能；
-8. rdbms json构建增加postSql，并支持构建多个preSql，postSql；
-9. 合并datax-registry模块到datax-rpc中；
-    10.数据源信息加密算法修改及代码优化；
-    11.时间增量同步支持更多时间格式；
-    12.日志页面增加DataX执行结果统计数据；
 
 
