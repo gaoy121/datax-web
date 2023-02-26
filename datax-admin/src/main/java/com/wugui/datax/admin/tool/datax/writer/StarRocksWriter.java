@@ -36,8 +36,6 @@ public class StarRocksWriter extends BaseWriterPlugin implements DataxWriterInte
         parameterObj.put("preSql", splitSql(plugin.getPreSql()));
         parameterObj.put("postSql", splitSql(plugin.getPostSql()));
         parameterObj.put("loadUrl", plugin.getLoadUrl().split(Constants.SPLIT_COMMA));
-        parameterObj.put("database", jobDatasource.getDatabaseName());
-        parameterObj.put("table", plugin.getTables());
 
         Map<String, Object> connectionObj = Maps.newLinkedHashMap();
         connectionObj.put("table", plugin.getTables());
