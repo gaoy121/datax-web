@@ -174,47 +174,11 @@ DataX Web是在DataX之上开发的分布式数据同步工具，提供简单易
 
 [前端github地址](https://github.com/WeiYe-Jing/datax-web-ui)
 
-# 项目成员
-
-- water
-
-```
-非常荣幸成为datax-web的Committer，从早期datax手工编写任务+配置，到datax-web界面化勾选创建任务+配置信息+调度管理，datax-web将数据同步工作的效率提升不少，相信后面后成为etl中不可或缺的生产力……
-```
-
-- Alecor
-
-```
-非常荣幸成为datax-web的Committer，datax-web旨在帮助用户从datax配置中解放出来，提供datax的Web化的管理能力。希望datax-web能为更多有需要的人服务，带来更好的简单、易用的体验！
-```
-
-- zhouhongfa
-
-- liukunyuan
-
-感谢贡献！
-
-# Contributing
-
-Contributions are welcome! Open a pull request to fix a bug, or open an Issue to discuss a new feature or change.
-
-欢迎参与项目贡献！比如提交PR修复一个bug，或者新建 Issue 讨论新特性或者变更。
-
-# Copyright and License
-
-MIT License
-
-Copyright (c) 2020 WeiYe
-
-产品开源免费，并且将持续提供免费的社区技术支持。个人或企业内部可自由的接入和使用。
-
-> 欢迎在 [登记地址](https://github.com/WeiYe-Jing/datax-web/issues/93) 登记，登记仅仅为了产品推广和提升社区开发的动力。
-
 # v-2.1.2
 
 ### 新增
 
-1. 添加项目管理模块，可对任务分类管理；
+1. 添加对StarRocks数据库的支持
 2. 对RDBMS数据源增加批量任务创建功能，选择数据源，表即可根据模板批量生成DataX同步任务；
 3. JSON构建增加ClickHouse数据源支持；
 4. 执行器CPU.内存.负载的监控页面图形化；
@@ -223,59 +187,8 @@ Copyright (c) 2020 WeiYe
 7. 脚本类型任务增加停止功能；
 8. rdbms json构建增加postSql，并支持构建多个preSql，postSql；
 9. 合并datax-registry模块到datax-rpc中；
-10.数据源信息加密算法修改及代码优化；
-11.时间增量同步支持更多时间格式；
-12.日志页面增加DataX执行结果统计数据；
-
-### 升级：
-
-1. PostgreSql，SQLServer，Oracle 数据源JSON构建增加schema name选择；
-2. DataX JSON中的字段名称与数据源关键词一致问题优化；
-3. 任务管理页面按钮展示优化；
-4. 日志管理页面增加任务描述信息；
-5. JSON构建前端form表单不能缓存数据问题修复;
-6. HIVE JSON构建增加头尾选项参数;
-
-### 备注：
-2.1.1版本不建议升级，数据源信息加密方式变更会导致之前已加密的数据源解密失败，任务运行失败。
-如果需要升级请重建数据源，任务。
-
-# v-2.1.1
-
-### 新增
-
-1. 添加HBase数据源支持，JSON构建可通过HBase数据源获取hbaseConfig，column；
-2. 添加MongoDB数据源支持，用户仅需要选择collectionName即可完成json构建；
-3. 添加执行器CPU.内存.负载的监控页面；
-4. 添加24类插件DataX JSON配置样例
-5. 公共字段（创建时间，创建人，修改时间，修改者）插入或更新时自动填充
-6. 对swagger接口进行token验证
-7. 任务增加超时时间，对超时任务kill datax进程，可配合重试策略避免网络问题导致的datax卡死。
-
-### 升级：
-
-1. 数据源管理对用户名和密码进行加密，提高安全性；
-2. 对JSON文件中的用户名密码进行加密，执行DataX任务时解密
-3. 对页面菜单整理，图标升级，提示信息等交互优化；
-4. 日志输出取消项目类名等无关信息，减小文件大小，优化大文件输出，优化页面展示；
-5. logback为从yml中获取日志路径配置
-
-### 修复：
-
-1. 任务日志过大时，查看日志报错，请求超时；
-
-# 提交代码
-[参与贡献](https://github.com/WeiYe-Jing/datax-web/issues/190)
-
-
-# Contact us
-
-### 个人微信
-![](https://datax-web.oss-cn-hangzhou.aliyuncs.com/doc/WechatIMG2.jpeg?x-oss-process=image/resize,w_230,h_230)
-
-### QQ交流群
-![](https://datax-web.oss-cn-hangzhou.aliyuncs.com/doc/qrcode3.jpeg?x-oss-process=image/resize,w_250,h_300)
-
-
+  10.数据源信息加密算法修改及代码优化；
+  11.时间增量同步支持更多时间格式；
+  12.日志页面增加DataX执行结果统计数据；
 
 
